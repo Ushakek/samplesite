@@ -9,6 +9,7 @@
         <h2>Рубрика: {{ current_rubric.name }}</h2>
         <div>
             <a href="{% url 'index' %}">Главная</a>
+            <a href="{% url 'add' %}">Добавить</a>
             {% for rubric in rubrics %}
             <a href="{% url 'by_rubric' rubric.pk %}">{{ rubric.name }}</a>
             {% endfor %}
